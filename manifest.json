@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Qwen Sidebar",
+  "version": "1.0",
+  "description": "Opens Qwen in a sidebar.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "Open Qwen Sidebar"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "sidebar.html",
+        "sidebar.css"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
