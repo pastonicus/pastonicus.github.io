@@ -5,7 +5,8 @@
   "description": "Opens Qwen in a sidebar.",
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "contextMenus"
   ],
   "background": {
     "service_worker": "background.js"
